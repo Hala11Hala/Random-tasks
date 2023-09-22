@@ -1,0 +1,12 @@
+tekst = input('geef een tekst in: ')
+woord = input('Geef een woord in: ')
+
+clean_tekst = tekst.replace(',' , '')  # verwijder de komma's
+list_tekst = clean_tekst.split()            # zet string om in list
+
+teller = 0
+for i in list_tekst:
+    if i == woord:
+        teller+=1
+
+print(teller)
